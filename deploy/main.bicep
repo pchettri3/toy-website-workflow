@@ -20,6 +20,7 @@ var toyManualsStorageAccountName = 'toyweb${resourceNameSuffix}'
 var environmentConfigurationMap = {
   nonprod: {
     appServicePlan: {
+      alwaysOn: false
       sku: {
         name: 'F1'
         capacity: 1
@@ -32,6 +33,7 @@ var environmentConfigurationMap = {
     }
   }
   prod: {
+    alwaysOn: true
     appServicePlan: {
       sku: {
         name: 'S1'
